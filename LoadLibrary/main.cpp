@@ -1,8 +1,8 @@
 #define Author xiaoice
 #include "pe.h"
 INT main(VOID) {
-	HMODULE hMod = myLoadLibrary("..\\x64\\Release\\testDll.dll"); //64Œª
-	//HMODULE hMod = myLoadLibrary("..\\Release\\testDll.dll"); //32Œª
+	HMODULE hMod = myLoadLibrary("..\\x64\\Release\\testDll.dll"); //64‰Ωç
+	//HMODULE hMod = myLoadLibrary("..\\Release\\testDll.dll"); //32‰Ωç
 	_Add Add = (_Add)myGetProcAddress(hMod, "Add");
 	printf("%d\n", Add(1, 2));
 	return 0;
@@ -11,7 +11,7 @@ INT main(VOID) {
 
 
 
-//INT main(VOID) { //œµÕ≥∫Ø ˝≤‚ ‘
+//INT main(VOID) { ////Á≥ªÁªüÂáΩÊï∞ÊµãËØï
 //	HMODULE hMod = LoadLibraryA("..\\x64\\Release\\testDll.dll");
 //	_Add Add = (_Add)GetProcAddress(hMod, "Add");
 //	printf("%d\n", Add(1, 2));
